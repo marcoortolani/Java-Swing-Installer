@@ -6,12 +6,19 @@ public class app {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Installer");
         JButton button = new JButton("Install");
-        button.addActionListener(new ActionListener(){
+        button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 ProcessBuilder pb = new ProcessBuilder("bash","install.bash");
                 try {
                     Process p = pb.start();
+                    try {
+						p.waitFor();
+					} catch (InterruptedException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+                    }
+                    JOptionPane.showMessageDialog(frame,"Done!");
                 } catch (IOException ee) {
                     ee.printStackTrace();
                 }
