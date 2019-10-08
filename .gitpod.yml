@@ -2,6 +2,7 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: javac app.java
+  - command: java app
 ports:
   - port: 6080
   - port: 5900
