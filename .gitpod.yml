@@ -6,3 +6,4 @@ tasks:
 ports:
   - port: 6080
   - port: 5900
+  - port: 35900
