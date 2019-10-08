@@ -4,5 +4,5 @@ cd pycalc
 echo "Installing pycalc"
 python3 setup.py install
 echo "removing unnecessary folder"
-rm -r pycalc
+rm -fr pycalc
 echo "Done"
