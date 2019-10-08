@@ -9,7 +9,7 @@ public class app {
         button.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                ProcessBuilder pb = new ProcessBuilder("python3","graph.py");
+                ProcessBuilder pb = new ProcessBuilder("bash","install.bash");
                 try {
                     Process p = pb.start();
                 } catch (IOException ee) {
