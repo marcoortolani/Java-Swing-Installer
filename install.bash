@@ -1,6 +1,6 @@
 echo "Cloning repo"
 git clone https://github.com/JesterOrNot/pymath.git
-cd pycalc
+cd pymath
 echo "Installing pycalc"
 python3 setup.py install
 echo "removing unnecessary folder"
