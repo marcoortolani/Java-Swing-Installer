@@ -1,8 +1,8 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: javac app.java
-    command: java app
+  - init: 'echo export JAVA_TOOL_OPTIONS=\"$JAVA_TOOL_OPTIONS -Dsun.java2d.xrender=false\" >>/home/gitpod/.bashrc'
+    command: 'source /home/gitpod/.bashrc'
 ports:
   - port: 6080
     onOpen: open-preview
